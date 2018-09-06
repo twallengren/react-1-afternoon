@@ -26,13 +26,13 @@ class EvenAndOdd extends Component {
         let inputArray = this.state.userInput.split(",")
 
         this.setState({
-            evenArray: [...this.state.evenArray, ...inputArray.filter(el => {
+            evenArray: [...inputArray.filter(el => {
                 return (el % 2 === 0)
             })]
         });
 
         this.setState({
-            oddArray: [...this.state.oddArray, ...inputArray.filter(el => {
+            oddArray: [...inputArray.filter(el => {
                 return (el % 2 === 1)
             })]
         });
